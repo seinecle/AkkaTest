@@ -10,18 +10,18 @@ operation: product of elements of arrays
     <th>nb of actors / operations</th><th><b>Akka (in milliseconds)</b></th><th><b>Regular java (in milliseconds)</b></th>
   </tr>
   <tr>
-    <td>10</td><td>60</td><td>12</td>
+    <td>10</td><td>150</td><td>150</td>
   </tr>
   <tr>
-    <td>100</td><td>460</td><td>60</td>
+    <td>100</td><td>1,200</td><td>5,600</td>
   </tr>
     <tr>
-    <td>1000</td><td>3,500</td><td>560</td>
+    <td>1000</td><td>11,000</td><td>56,000</td>
   </tr>
 </table>	
 	
 <br>
-###<b>conclusion test 1: Akka is slower by a factor of 5.</b>
+###<b>conclusion test 1: Akka is faster by a factor of 5.</b>
 
 #TEST 2	
 double loop through an array of 10,000 integers	

@@ -5,6 +5,9 @@
  */
 package ClassicJavaBenchmark;
 
+import Tests.TestOne;
+import Tests.TestTwo;
+
 /*
  Copyright 2008-2013 Clement Levallois
  Authors : Clement Levallois <clementlevallois@gmail.com>
@@ -47,29 +50,21 @@ package ClassicJavaBenchmark;
 public class TestActor {
 
     String i;
+    long result;
 
     public TestActor(String i) {
         this.i = i;
     }
 
-    public long greet() {
-        int[] intArray = new int[10000];
+    public long greet(String test) {
+        if (test.equals("Test2")) {
+            TestTwo test2 = new TestTwo();
+            return result = test2.execute();
+        } else {
+            TestOne test1 = new TestOne();
+            return result = test1.execute();
 
-        long result = 0;
-        for (int i = 0; i < intArray.length; i++) {
-            intArray[i] = i;
         }
-
-        for (int i = 0; i < intArray.length; i++) {
-//            for (int j = 0; j < intArray.length; j++) {
-                String randomValue = "this is a random Stringthis is a random Stringthis is a random Stringthis is a random Stringthis is a random Stringthis is a random Stringthis is a random Stringthis is a random Stringthis is a random Stringthis is a random Stringthis is a random String";
-                randomValue = randomValue.replaceAll("[a|d]|\\d", "new char");
-                result = result + (long)i;
-//                result = result + (long)j * i;
-//            }
-        }
-
-        return result;
     }
 
 }

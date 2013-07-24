@@ -54,7 +54,7 @@ public class JavaAppBenchmark {
 
     public static void main(String args[]) {
 
-        int nbOperations = 1000;
+        int nbOperations = 100;
         Clock totalTime = new Clock("total Time for " + nbOperations + " in the benchmark");
 
         List<TestActor> greeters = new ArrayList();
@@ -65,7 +65,7 @@ public class JavaAppBenchmark {
 
         long totalResult = 0;
         for (TestActor greeter : greeters) {
-            totalResult = totalResult + greeter.greet();
+            totalResult = totalResult + greeter.greet("Test2");
         }
         System.out.println("total Result = " + totalResult);
         totalTime.closeAndPrintClock();

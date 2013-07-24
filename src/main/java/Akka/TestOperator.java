@@ -69,12 +69,12 @@ public class TestOperator extends UntypedActor {
 //Test_1 performs many, many quick operations (products of integers).
 //Test_2 performs less operations but each of them is much more demanding (regex operations on String)        
         if (msg == Msg.TEST1) {
-            TestTwo test1 = new TestTwo();
+            TestOne test1 = new TestOne();
             result = test1.execute();
         }
 
         if (msg == Msg.TEST2) {
-            TestOne test2 = new TestOne();
+            TestTwo test2 = new TestTwo();
             result = test2.execute();
         }
 

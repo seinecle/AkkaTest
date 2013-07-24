@@ -15,7 +15,7 @@ import java.util.List;
 public class AkkaApp extends UntypedActor {
 
     int counterMsgReceivedFromGreeters = 0;
-    int nbActors = 1000;
+    int nbActors = 10;
     Clock totalTime = new Clock("Clocking total time to process " + nbActors + " workers using akka");
     long totalResult = 0;
 

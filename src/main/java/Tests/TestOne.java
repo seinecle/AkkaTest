@@ -61,7 +61,7 @@ public class TestOne {
 
         for (int i = 0; i < intArray.length; i++) {
             for (int j = 0; j < intArray.length; j++) {
-                result = result + (long) j * i;
+                result = result + (long) intArray[j] * intArray[i];
             }
         }
         return result;
