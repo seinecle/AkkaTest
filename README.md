@@ -43,7 +43,7 @@ operation: do some complex regex ops on a random String for each of the 10,000 s
 </table>	
 
 <br>
-###<b>conclusion test 2: Akka is faster by a factor of 2 or 3.</b>
+###<b>conclusion test 2: Akka is faster by a factor of 3 to 4.</b>
     
 	
 -----
