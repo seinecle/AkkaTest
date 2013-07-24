@@ -7,7 +7,7 @@ operation: product of elements of arrays
 	
 			in milliseconds	
 Akka:	
-10 actors "->" 60	
+10 actors -> 60	
 100 actors	460  
 1000 actors	3,500	
 	
